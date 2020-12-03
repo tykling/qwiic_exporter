@@ -22,7 +22,7 @@ setuptools.setup(
     url="https://github.com/tykling/QwiicExporter",
     packages=["qwiic_exporter"],
     entry_points={
-        "console_scripts": ["qwiic_exporter = qwiic_expoterl.qwiic_expoter:main"]
+        "console_scripts": ["qwiic_exporter = qwiic_exporter.qwiic_exporter:main"]
     },
     classifiers=[
         "Programming Language :: Python :: 3.7",

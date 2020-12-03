@@ -8,7 +8,10 @@ this changelogs format is based on Keep a Changelog from https://keepachangelog.
 
 [0.2.0] - unreleased
 ====================
-- No changes
+
+Fixed
+-----
+- Typo in setup.py in entry_points making console_scripts not work
 
 
 [0.1.0] - 2020-12-03
