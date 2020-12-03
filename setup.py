@@ -12,7 +12,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="qwiic_exporter",
-    version="0.1.0-dev",
+    version="0.1.0",
     author="Thomas Steen Rasmussen",
     author_email="thomas@gibfest.dk",
     description="QwiicExpoter is a Prometheus exporter for SparkFun QWIIC sensor shield Artemis OpenLog.",

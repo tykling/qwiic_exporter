@@ -8,7 +8,7 @@ Until I get something better written here are the argparse usage instructions::
                             [-q] [-v]
                             SERIALPORT PROMPATH
 
-   qwiic_exporter version 0.1.0-dev. Exports metrics from SparkFun OpenLog
+   qwiic_exporter version 0.1.0. Exports metrics from SparkFun OpenLog
    Artemis sensors to Prometheus node_exporter textfile collector path.
 
    positional arguments:
