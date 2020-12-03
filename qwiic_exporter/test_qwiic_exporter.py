@@ -202,19 +202,19 @@ def test_ingest_data():
         list(qwe.registry._names_to_collectors["qwiic_accelerometer_x_gs"]._samples())[
             0
         ][2]
-        == -638670.0
+        == -0.63867
     )
     assert (
         list(qwe.registry._names_to_collectors["qwiic_accelerometer_y_gs"]._samples())[
             0
         ][2]
-        == 153320.0
+        == 0.15331999999999998
     )
     assert (
         list(qwe.registry._names_to_collectors["qwiic_accelerometer_z_gs"]._samples())[
             0
         ][2]
-        == 782230.0
+        == 0.78223
     )
 
     assert (
