@@ -12,6 +12,7 @@ this changelogs format is based on Keep a Changelog from https://keepachangelog.
 Fixed
 -----
 - Typo in setup.py in entry_points making console_scripts not work
+- Inverted multipliers so values were all wrong for many metrics
 
 
 [0.1.0] - 2020-12-03

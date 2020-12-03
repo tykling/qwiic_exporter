@@ -70,24 +70,24 @@ class QwiicExporter:
         },
         "ICM-20948 IMU": {
             "Accelerometer": [
-                # sensor reads in milli g so multiply by 1000 to get g
+                # sensor reads in milli g so divide by 1000 to get g
                 (
                     "aX",
                     "qwiic_accelerometer_x_gs",
                     "Accelration on the X axis in gs",
-                    1000,
+                    0.001,
                 ),
                 (
                     "aY",
                     "qwiic_accelerometer_y_gs",
                     "Accelration on the Y axis in gs",
-                    1000,
+                    0.001,
                 ),
                 (
                     "aZ",
                     "qwiic_accelerometer_z_gs",
                     "Accelration on the Z axis in gs",
-                    1000,
+                    0.001,
                 ),
             ],
             "Gyro": [
@@ -111,24 +111,24 @@ class QwiicExporter:
                 ),
             ],
             "Magnetometer": [
-                # sensor reads in micro teslas so multiply by 1000000 to get teslas
+                # sensor reads in micro teslas so divide by 1000000 to get teslas
                 (
                     "mX",
                     "qwiic_magnetometer_x_teslas",
                     "Magnetometer X axis teslas",
-                    1000000,
+                    0.000001,
                 ),
                 (
                     "mY",
                     "qwiic_magnetometer_y_teslas",
                     "Magnetometer Y axis teslas",
-                    1000000,
+                    0.000001,
                 ),
                 (
                     "mZ",
                     "qwiic_magnetometer_z_teslas",
                     "Magnetometer Z axis teslas",
-                    1000000,
+                    0.000001,
                 ),
             ],
             "Temperature": [
@@ -150,8 +150,8 @@ class QwiicExporter:
                 ),
             ],
             "Pressure": [
-                # sensor reading is in hectoPascals so divide by 100 to get pascals
-                ("hPa", "qwiic_pressure_pascals", "The pressure in pascals", 0.01),
+                # sensor reading is in hectoPascals so multiply by 100 to get pascals
+                ("hPa", "qwiic_pressure_pascals", "The pressure in pascals", 100),
             ],
             "Temperature": [
                 (
