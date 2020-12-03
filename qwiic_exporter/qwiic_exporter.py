@@ -1,4 +1,4 @@
-"""QwiicExporter v0.1.0 module.
+"""QwiicExporter v0.2.0-dev module.
 
 Source code available at https://github.com/tykling/qwiic_exporter/
 Can be installed from PyPi https://pypi.org/project/qwiic_exporter/
@@ -13,7 +13,7 @@ import typing
 import prometheus_client  # type: ignore
 import serial  # type: ignore
 
-__version__ = "0.1.0"
+__version__ = "0.2.0-dev"
 logger = logging.getLogger("qwiic_exporter.%s" % __name__)
 
 
